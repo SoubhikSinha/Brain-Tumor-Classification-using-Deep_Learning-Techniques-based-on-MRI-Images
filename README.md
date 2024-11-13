@@ -319,3 +319,36 @@ GoogLeNet, also known as Inception v1, is a deep convolutional neural network ar
 6. **Auxiliary Classifiers' Weight**
     - The auxiliary classifiers are weighted (often by a factor of 0.3 or 0.4) during training to balance their contribution to the overall loss.
 
+<br>
+<br>
+
+### Frameworks and Libraries Used
+---
+
+ - numpy
+ - pandas
+ - matplotlib
+ - seaborn
+ - [os](https://docs.python.org/3/library/os.html)
+ - torch
+ - torchvision
+ - tensorflow
+ - sklearn.metrics
+ - PIL
+
+<br>
+<br>
+
+### Running Locally / Cloud
+---
+Though the project was carried out on Google Colab, you can clone and modify the code to run on your local machine, provided you have a GPU enabled.
+<br>
+
+If you refer to the notebook related to the `VGGNet` implementation, where data preprocessing and exploration were also performed, you will see the data paths used when the notebooks were running in the Google Colab environment🔻
+<br>
+<code>
+train_dir = '/content/drive/MyDrive/Datasets/Brain_tumour_Kaggle/Training'
+test_dir = '/content/drive/MyDrive/Datasets/Brain_tumour_Kaggle/Testing'
+</code>
+
+You can replicate the same setup on your local machine by adjusting the data paths for your Training and Testing directories accordingly."

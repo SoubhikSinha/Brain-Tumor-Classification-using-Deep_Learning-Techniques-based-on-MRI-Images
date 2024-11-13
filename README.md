@@ -392,6 +392,15 @@ However, if you wish to run this on your local (Windows) machine, you must have 
 
 <br>
 
+### Results
+---
+**VGGNet (VGG-13) Model dominated over all with the below setup 🔻**
+<br>
+ **SETUP 2 : Regularization (L2) + Increased number of Epochs (20)**
 
-
-
+-   **Train Loss:** Decreased from **0.0798** to **0.0205**
+-   **Train Accuracy:** Increased from **97.36%** to **99.40%**
+-   **Validation Loss:** Decreased from **0.3853** to **0.3328**
+-   **Validation Accuracy:** Increased from **89.39%** to **92.35%**
+-   **Test Loss:** **0.3303**
+-   **Test Accuracy:** <mark>&nbsp; **90.95%**&nbsp; </mark>

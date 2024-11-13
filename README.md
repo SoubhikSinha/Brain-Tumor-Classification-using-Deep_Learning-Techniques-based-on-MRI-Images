@@ -121,6 +121,7 @@ These preprocessing techniques ensured the dataset’s quality and readiness for
 
 <br>
 <br>
+<br>
 
 ### Model Architecture
 ---
@@ -404,3 +405,13 @@ However, if you wish to run this on your local (Windows) machine, you must have 
 -   **Validation Accuracy:** Increased from **89.39%** to **92.35%**
 -   **Test Loss:** **0.3303**
 -   **Test Accuracy:** <mark>&nbsp; **90.95%**&nbsp; </mark>
+
+<br>
+
+### Acknowledgements
+---
+I would like to express my sincere thanks to the creators of the **Brain Tumour MRI Dataset** from Kaggle and the **Brain Tumour Dataset** from Kaggle for providing the essential data for this project.
+
+I also appreciate the research and insights from key resources, including the book **"Deep Learning"** by Ian Goodfellow, and articles on **VGGNet**, **ResNet**, **DenseNet**, and **GoogLeNet**, which were invaluable in understanding neural networks and their application to medical imaging.
+
+Special thanks to my mentors and peers for their continuous support and valuable feedback throughout this project.

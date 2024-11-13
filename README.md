@@ -339,7 +339,7 @@ GoogLeNet, also known as Inception v1, is a deep convolutional neural network ar
 <br>
 <br>
 
-### Running Locally / Cloud
+### Running Locally / on Cloud
 ---
 Though the project was carried out on Google Colab, you can clone and modify the code to run on your local machine, provided you have a GPU enabled.
 <br>
@@ -351,4 +351,47 @@ train_dir = '/content/drive/MyDrive/Datasets/Brain_tumour_Kaggle/Training'
 test_dir = '/content/drive/MyDrive/Datasets/Brain_tumour_Kaggle/Testing'
 </code>
 
-You can replicate the same setup on your local machine by adjusting the data paths for your Training and Testing directories accordingly."
+You can replicate the same setup on your local machine by adjusting the data paths for your Training and Testing directories accordingly.
+
+<br>
+
+Since these are Jupyter notebooks, they don't require any special setup to run unless you are running them on your local machine. The models are trained, validated, and tested on a GPU _**(NVIDIA GTX 1050 - in my case)**_. Therefore, if you are running the code on cloud platforms like Google Colab or Kaggle Notebooks, where GPUs are integrated, there should be no issues.
+
+However, if you wish to run this on your local (Windows) machine, you must have a GPU installed and properly set up with ***PyTorch***. Below is a helpful video link I used to configure my setup🔻:
+
+**LINK** : [How to setup NVIDIA GPU for PyTorch on Windows 10/11](https://www.youtube.com/watch?v=r7Am-ZGMef8&t=381s)
+
+<br>
+
+> To run your model on GPU, you need to put both - the model instance and the dataloaders - inside the GPU 🔻
+> 
+> <code>
+> import torch 
+> from torch.utils.data import DataLoader 
+> from torchvision import datasets, transforms, models 
+> </code>
+> <code>
+> '''
+> Check if GPU is available device = torch.device("cuda" if > torch.cuda.is_available() else "cpu") print(f"Using device: {device}")
+> '''
+> device = torch.device("cuda" if torch.cuda.is_available() else "cpu") 
+> print(f"Using device: {device}")
+> </code>
+> <code>
+> '''
+> Define your model (example using ResNet18) 
+> '''
+> model = models.resnet18(pretrained=True)
+> </code>
+> <code>
+> '''
+> Move model to the appropriate device 
+> '''
+> model = model.to(device)
+> </code>
+
+<br>
+
+
+
+
